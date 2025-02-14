@@ -1,6 +1,6 @@
 .Chat-Bot {
     background: #e9d6b5;
-    min-height: 155vh; /* Full viewport height */
+    min-height: 155vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
 }
 
 .calculate-button:hover {
-    background-color: #092350; /* Darker orange on hover */
+    background-color: #092350;
     cursor: pointer;
 }
 
@@ -80,7 +80,7 @@ button.calculate-button a{
     padding: 12px;
     border-radius: 12px;
     display: flex;
-    flex-direction: column; /* Prevents them from stretching horizontally */
+    flex-direction: column;
     width: 100%;
 }
 
@@ -93,7 +93,7 @@ button.calculate-button a{
 }
 
 .form-symbol {
-    background-color: #b0c4de; /* Lighter for better contrast */
+    background-color: #b0c4de;
     color: #2e4b69;
     padding: 10px;
     font-weight: 600;

@@ -1,4 +1,4 @@
-/* Reset default browser styling */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +6,7 @@
     font-family: "Roboto", "Roboto Thin", "Segoe UI", sans-serif;
 }
 
-/* Ensure body and html take full height */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -15,7 +15,7 @@ html, body {
     flex-direction: column;
 }
 
-/* Navbar */
+
 .navbar {
     background: #2e4b69;
     height: 80px;
@@ -30,7 +30,7 @@ html, body {
     left: 0;
 }
 
-/* Menu container */
+
 .menu-container {
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ html, body {
     font-weight: 650;
 }
 
-/* Profile Section */
+
 .profile-section {
     display: flex;
     align-items: center;
@@ -70,7 +70,7 @@ html, body {
     cursor: pointer;
 }
 
-/* Dropdown Menu */
+
 .profile-dropdown {
     opacity: 0;
     visibility: hidden;
@@ -87,7 +87,7 @@ html, body {
     transform: translateY(-10px);
 }
 
-/* Show dropdown */
+
 .profile-dropdown.show {
     opacity: 1;
     visibility: visible;
@@ -132,7 +132,7 @@ html, body {
     color: #fed183;
 }
 
-/* Hero Section */
+
 .Hero {
     background: #e9d6b5;
     height: 60vh;
@@ -141,7 +141,7 @@ html, body {
     align-items: center;
 }
 
-/* Fix Hero Container */
+
 .Hero-container {
     max-width: 1200px;
     display: flex;
@@ -183,7 +183,7 @@ html, body {
     to { width: 100%; }
 }
 
-/* Slogan */
+
 #slogan {
     font-family: 'Lucida Sans', sans-serif;
     color: #d4a177;
@@ -193,7 +193,7 @@ html, body {
     width: 100%;
 }
 
-/* Textbox */
+
 .h-textbox {
     padding: 70px;
     background-color: #ffffff;
@@ -204,7 +204,7 @@ html, body {
     text-align: center;
 }
 
-/* Lower Container */
+
 .lower-container {
     background-color: #e9d6b5;
     width: 100%;
@@ -226,7 +226,7 @@ html, body {
     margin-top: 20px;
 }
 
-/* Chatbot Button */
+
 .Chatbot-button {
     border-radius: 14px;
     font-size: 15px;
@@ -258,14 +258,14 @@ html, body {
     transform: scale(1.05);
 }
 
-/* Chatbot Output */
+
 .chatbotOutput {
     width: 100%;
     height: 100%;
     font-size: 10px;
 }
 
-/* Contact Section */
+
 .Contact-us-container {
     background: #e9d6b5;
     height: 762px;
@@ -328,7 +328,7 @@ html, body {
     color: #e47113;
 }
 
-/* Advice Section */
+
 .Advice {
     background-color: #e9d6b5;
     height: 762px;
