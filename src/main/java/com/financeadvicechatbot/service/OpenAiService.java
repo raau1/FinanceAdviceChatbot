@@ -17,7 +17,7 @@ public class OpenAiService {
 
     private final UserRepository userRepository;
 
-    @Value("${openai.api.key}")
+    @Value("${ai.api.key}")
     private String apiKey;
 
     private static final String API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-alpha";
