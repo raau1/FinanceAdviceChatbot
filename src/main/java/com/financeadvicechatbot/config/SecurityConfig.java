@@ -20,35 +20,30 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        // Disable CSRF only for login to prevent Railway blocks
         http.csrf(csrf -> csrf.ignoringRequestMatchers("/login"));
 
-        // Permit public access to login, register, and static assets
         http.authorizeHttpRequests(request -> request
                 .requestMatchers("/", "/register", "/login", "/css/**", "/js/**", "/images/**").permitAll()
                 .anyRequest().authenticated()
         );
 
-        // Fix login issues: Ensure login page is accessible & prevent redirect loops
         http.formLogin(form -> form
                 .loginPage("/login")
                 .usernameParameter("email")
                 .loginProcessingUrl("/login")
-                .defaultSuccessUrl("/", true) // 🚀 Redirect to home page after login
-                .failureUrl("/login?error=true") // 🚀 Show error message if login fails
+                .defaultSuccessUrl("/", true)
+                .failureUrl("/login?error=true")
                 .permitAll()
         );
 
-        // Fix logout handling for Railway: Ensure session is cleared properly
         http.logout(logout -> logout
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/login") // 🚀 Redirect to login page after logout
+                .logoutSuccessUrl("/login")
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")
                 .permitAll()
         );
 
-        // Ensure custom user authentication works
         http.userDetailsService(userDetails);
 
         return http.build();
