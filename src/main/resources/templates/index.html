@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YFA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<nav class="navbar">
+
+    <div class="menu-container">
+        <a href="/" id="logo">YFA</a>
+    </div>
+
+    <ul class="menu">
+        <li class="page">
+            <a href="/chatbot" class="navbar-links">Talk to Our Chatbot</a>
+        </li>
+        <li class="page">
+            <a href="/financeAdvice" class="navbar-links">Chatbot Results</a>
+        </li>
+    </ul>
+
+    <!-- Profile Section (Only visible when user is logged in) -->
+    <div class="profile-section" th:if="${#authorization.expression('isAuthenticated()')}">
+        <!-- Clickable Profile Picture -->
+        <img src="/images/pfp.png" alt="Profile Picture" class="profile-pic" onclick="toggleDropdown()">
+
+        <!-- Dropdown Menu -->
+        <div id="profile-dropdown" class="profile-dropdown">
+            <a href="/logout" class="dropdown-item">Sign Out</a>
+        </div>
+    </div>
+
+
+</nav>
+<main>
+    <div class="Hero">
+        <div class="Hero-container">
+            <div class="Hero-content">
+                <h1 id = "wel">Welcome to </h1>
+                <h1 id = "welc">Your Financial Advisor </h1>
+                <p id = "slogan">Your money Our priority</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section>
+    <div class="lower-container">
+        <div class="h-textbox">
+            <h2 id="box-title">Empower Your Financial Future with AI</h2>
+            <p id="box-content">
+                Get real-time, personalized financial advice based on your spending habits.
+                Our AI-powered financial advisor helps you make smarter money decisions effortlessly.
+            </p>
+            <button class="Chatbot-button">
+                <a href="/chatbot">Talk to our Chatbot</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<script th:src="@{/javascript/navbar.js}"></script>
+</body>
+</html>

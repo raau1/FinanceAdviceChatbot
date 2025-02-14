@@ -1,0 +1,53 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Finance Advice</title>
+</head>
+<body>
+<nav class="navbar">
+
+    <div class="menu-container">
+        <a href="/" id="logo">YFA</a>
+    </div>
+
+    <ul class="menu">
+        <li class="page">
+            <a href="/chatbot" class="navbar-links">Talk to Our Chatbot</a>
+        </li>
+        <li class="page">
+            <a href="/financeAdvice" class="navbar-links">Chatbot Results</a>
+        </li>
+    </ul>
+
+    <div class="profile-section" th:if="${#authorization.expression('isAuthenticated()')}">
+        <!-- Clickable Profile Picture -->
+        <img src="/images/pfp.png" alt="Profile Picture" class="profile-pic" onclick="toggleDropdown()">
+
+        <!-- Dropdown Menu -->
+        <div id="profile-dropdown" class="profile-dropdown">
+            <a href="/logout" class="dropdown-item">Sign Out</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="FinanceAdvise">
+        <div>
+            <h1 class="FinanceAdviseHeader">Your Financial Advisor Thinks You Should... </h1>
+            <h1 class="FinanceAdviseOutput" th:text="${chatbotOutput2}"></h1>
+            <h1 class="FinanceAdviseOutput" th:text="${chatbotOutput3}"></h1>
+            <h1 class="FinanceAdviseOutput" th:text="${chatbotOutput4}"></h1>
+            <h1 class="FinanceAdviseOutput" th:text="${chatbotOutput5}"></h1>
+            <h1 class="FinanceAdviseOutput" th:text="${chatbotOutput6}"></h1>
+        </div>
+    </div>
+</main>
+<script th:src="@{/javascript/navbar.js}"></script>
+</body>
+</html>

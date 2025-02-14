@@ -1,0 +1,140 @@
+.Chat-Bot {
+    background: #e9d6b5;
+    min-height: 155vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Chat-Box {
+    padding: 30px;
+    margin: 20px;
+    background-color: #ffffff;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#res-title {
+    font-size: 20px;
+    color: #e47113;
+}
+
+#cal-content {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #d4a177;
+    margin-top: 40px;
+}
+
+
+.calculate-button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #2e4b69c2;
+    color: #ffffff;
+    border-radius: 60px;
+    border: outset;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.calculate-button:hover {
+    background-color: #092350; /* Darker orange on hover */
+    cursor: pointer;
+}
+
+button.calculate-button a{
+    text-decoration: none;
+    color: #e47113;
+
+}
+
+.Generate-button{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 12px;
+    position: center;
+
+
+}
+
+
+.form-item {
+    margin-top: 50px;
+    background-color: #e9d6b5;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; /* Prevents them from stretching horizontally */
+    width: 100%;
+}
+
+
+.filling-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-symbol {
+    background-color: #b0c4de; /* Lighter for better contrast */
+    color: #2e4b69;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.Heading {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #2e4b69;
+}
+
+#form-textbox {
+    background-color: #f5e5c6dc;
+    border: 1px solid #d4a177;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+.filling-form {
+    border: 1px solid transparent;
+}
+
+#res-brief {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #2e4b69;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.res-res {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #2e4b69;
+    margin-top: 15px;
+    font-weight: 600;
+    background-color: #e9d6b5;
+    padding: 25px;
+    border-radius: 5%;
+}

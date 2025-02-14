@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YFA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<nav class="navbar">
+
+    <div class="menu-container">
+        <a href="/" id="logo">YFA</a>
+    </div>
+
+</nav>
+
+<main>
+    <div class="Contact-us-container">
+        <div class="forum">
+            <div class="forum-box">
+                <h2 id="Forum-title">YourFinancialAdvisor </h2>
+
+
+                <form action="/register" method="post">
+                    <div class="forum-item">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder=" Enter an email" required />
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="forum-item">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" placeholder=" Create a password" required />
+                        <span class="error-message" id="name-error"></span>
+
+                    </div>
+                    <button> Sign up </button>
+                </form>
+
+
+                <div class="Register-item">
+                    <p>Already have an Account? <a href="/login">Log in</a></p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</main>
+
+
+
+</body>
+
+
+
+</html>
