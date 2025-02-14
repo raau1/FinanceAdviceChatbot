@@ -26,10 +26,3 @@
     
 4. **Running the Project:**
    - Once the API key is set up, the project should run successfully.
-   
-  
-5. **Final Alternative**
-   - Alternatively, https://ibm-hackathon-production.up.railway.app/ should give you access to the project
-   - The styling has slightly changed from when we ran it but functionally the project should be the same
-   
-
