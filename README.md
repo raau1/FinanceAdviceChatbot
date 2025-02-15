@@ -7,6 +7,9 @@
 
 ---
 
+### Our Project:
+- Our aim for this two-day IBM Hackathon was to build an AI-Powered web-app that took user input and delivered quick tailored financial advice using huggingface.co API integration and prompt engineering.
+ 
 ### How to Run the Project:
 
 1. **Set up the MySQL Database:**
